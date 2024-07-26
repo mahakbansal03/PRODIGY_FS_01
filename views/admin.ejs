@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+    <% if(access == "N"){ %>
+        <h2>ACCESS DENIED!</h2>
+    <% } else if (access == "Y") { %>
+    <div class="head">
+        <h2 class="main">Admin-only Page</h2>
+    </div>
+    <div class="center">
+        <p>Welcome admin.</p>
+    </div>
+    <footer>
+        <a href="/protected/dashboard">exit admin mode</a>
+        <a href="/auth/logout" class="rightmost">Logout</a>
+    </footer>
+    <% } %>
+</body>
+
+</html>

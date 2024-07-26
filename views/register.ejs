@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="/css/register.css">
+</head>
+<body>
+    <div class="center">
+    <div class="left">
+        <h2 class="main">Register</h2>
+    </div>
+    <div class="right">
+    <form action="/auth/register" method="POST">
+        <div>
+            <label for="username">username</label> <br>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">password</label> <br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <div class="login">
+        Already have an account&nbsp;?&nbsp;&nbsp;<a href="/auth/login">Login</a>
+    </div>
+</div>
+</div>
+</body>
+</html>
